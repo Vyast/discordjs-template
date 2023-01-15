@@ -1,14 +1,26 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "sourceMap": true,
-    "outDir": "dist",
-    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "target": "es6",
-    "lib": ["esnext"],
-    "moduleResolution": "node",
+    "skipLibCheck": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "preserveWatchOutput": true,
+    "moduleResolution": "node",
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "lib": ["ESNext"],
     "module": "CommonJS",
-    "skipLibCheck": true
-  }
+    "target": "ESNext",
+
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules"]
 }

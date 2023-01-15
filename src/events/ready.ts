@@ -6,5 +6,9 @@ export async function ready(client: Client<true>) {
     status: "online",
   });
 
-  console.log("\x1b[36m", `${client.user.tag} - bot online.`, "\x1b[0m");
+  console.log(
+    "\x1b[36m",
+    `${client.user.tag} - Discord bot online.`,
+    "\x1b[0m"
+  );
 }
